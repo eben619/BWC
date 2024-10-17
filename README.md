@@ -6,8 +6,10 @@
 <br>
 
 
-***Fork this repo, Press the Fork button***
+***Fork this repo, Press the Fork button.***
+
 ***Create project branch***
+
 ***Start committing to that branch, Make your changes within new branch***
 
 <br>
