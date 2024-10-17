@@ -4,7 +4,7 @@
 </div>
 
 <details>
-  <summary>Useful Links</summary><br>
+  <summary>USEFUL LINKS</summary>
   
 * <a href="http://alfajores.celoscan.io" rel="noreferrer">Celo's Alfajores Testnet Explorer</a><br>
 * <a href="http://faucet.celo.org/alfajores" rel="noreferrer">Funding Your Wallet With Testnet Tokens</a><br>
@@ -14,7 +14,7 @@
 </details>
 
 <details>
-  <summary>INTRODUCTION</summary><br>
+  <summary>INTRODUCTION</summary>
 
 Celo Foundation’s Role in the Web3 Ecosystem
 Celo Foundation is at the forefront of the Web3 revolution, driving the adoption of decentralized finance and promoting financial inclusion worldwide. By leveraging blockchain technology, the foundation is working to create a more equitable and accessible financial system, paving the way for a future where everyone can participate in the global economy.
@@ -23,7 +23,7 @@ Celo's mobile-first approach aims to make decentralized finance (DeFi) accessibl
 </details>
 
 <details>
-  <summary>Common Terms Used In Web3.</summary><br>
+  <summary>COMMON TERMS IN WEB3 DEVELOPMENT.</summary>
 
 * <b>Blockchain:</b> (A database maintained by a distributed set of computers that do not share a trust relationship or common ownership. This arrangement     is referred to as decentralized. The content of a blockchain's database, or ledger, is authenticated using cryptographic techniques, preventing     its contents being edited or removed except according to a protocol's consensus mechanism)
   
@@ -54,7 +54,7 @@ Celo's mobile-first approach aims to make decentralized finance (DeFi) accessibl
 </details><br>
 
 <details>
-  <summary>Introduction To Solidity</summary><br>
+  <summary>INTRODUTION TO SOLIDITY</summary>
 
 Solidity is an EVM compatible language which supports a variety of data types that can be categorized mainly into value types and reference types. Other types such as function types and Tuples also exist.
 
@@ -87,10 +87,10 @@ Basic Structure Of A Function In Solidity:
 
 📧 Learn the [Solidity globals and units](https://solidity.readthedocs.io/en/v0.8.19/units-and-global-variables.html)
 
-</details><br>
+</details>
 
 <details>
-  <summary>Celo Composer</summary><br>
+  <summary>CELO COMPOSER</summary>
 
 A DApp is composed of at least:
 
