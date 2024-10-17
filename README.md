@@ -629,6 +629,8 @@ Join the Celo Ghana Developers Community
 
 <img width="350px" src="https://github.com/eben619/Celo_Africa_Dao-Ghana_University_Tour/blob/main/CeloGhanaCommunity.jpg" align="center" alt="Celo Ghana WhatsApp"/>
 
+Join the Celo Africa DAO Telegram Community
 
+<img width="350px" src="https://github.com/eben619/BWC/Scr.jpg" align="center" alt="Celo Ghana WhatsApp"/>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
