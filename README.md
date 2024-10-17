@@ -211,10 +211,10 @@ contract Savings {
 This creates a storage structure that links each user’s address to their balance in the contract.
 
 <b>function deposit() public payable:</b>
-Allows users to send Ether to the contract. The msg.value represents the amount of Ether sent, and this is added to the user's balance.
+Allows users to send funds to the contract. The msg.value represents the amount of funds sent, and this is added to the user's balance.
 
 <b>function withdraw(uint256 _amount):</b>
-Lets users withdraw a specified amount of Ether from their balance. It checks if they have enough funds, deducts the amount, and transfers the Ether to them.
+Lets users withdraw a specified amount of funds from their balance. It checks if they have enough funds, deducts the amount, and transfers the funds to them.
 
 <b>function getBalance():</b>
 Returns the balance of the caller’s account.
