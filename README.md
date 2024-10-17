@@ -243,8 +243,8 @@ npx hardhat run scripts/deploy.ts --network alfajores
   <summary>BUILDING A FRONTEND TO INTERACT WITH YOUR CONTRACT</summary>
 <br>
 We are going to create a simple frontend to interact with our contract. We are going to create a deposit component, a withdraw component, and a component to display our saving balance.
-
-Deposit.tsx Component
+<br>
+<b>Deposit.tsx Component</b>
 ```
 import React, { useState } from "react";
 import { useWeb3 } from "@/contexts/useWeb3";  // Use the updated Web3 hook
@@ -293,7 +293,7 @@ export default Deposit;
 
 ```
 <br>
-Withdraw.tsx Component
+<b>Withdraw.tsx Component</b>
 ```
 import React, { useState } from "react";
 
@@ -336,7 +336,7 @@ export default Withdraw;
 
 ```
 <br>
-DisplayBalance.tsx Component
+<b>DisplayBalance.tsx Component</b>
 ```
 import React, { useEffect } from "react";
 
@@ -362,7 +362,7 @@ export default DisplayBalance;
 
 ```
 <br>
-New useWeb3.ts file
+<b>New useWeb3.ts file</b>
 ```
 import { useState } from "react";
 import {
@@ -466,7 +466,7 @@ export const useWeb3 = () => {
 
 ```
 <br>
-New index.tsx Component that imports the Deposit, Withdraw and Display Balance component.
+<b>New index.tsx Component that imports the Deposit, Withdraw and Display Balance component.</b>
 ```
 /* eslint-disable react-hooks/exhaustive-deps */
 import PrimaryButton from "@/components/Button";
@@ -592,7 +592,6 @@ export default function Home() {
 
 ```
 </details>
-
 
 <details>
   <summary>Common Terms Used In Web3.</summary>
