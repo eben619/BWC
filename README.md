@@ -40,25 +40,27 @@ Celo's mobile-first approach aims to make decentralized finance (DeFi) accessibl
 
 * Blockchain (A database maintained by a distributed set of computers that do not share a trust relationship or common ownership. This arrangement     is referred to as decentralized. The content of a blockchain's database, or ledger, is authenticated using cryptographic techniques, preventing     its contents being edited or removed except according to a protocol's consensus mechanism)
   
-* Smart Contract (Smart contracts are intructions embeded within code which are executed automatically by a computer program or a transaction          protocol. They make actions such as transferring cryptocurrencies or other tokens possible.)
+* Wallets are tools that create accounts, manage keys, and help users transact on a blockchain network.
+  
+* Smart Contract (Smart contracts are intructions embeded within code which are executed automatically by a computer program or a transaction protocol. They make actions such as transferring cryptocurrencies or other tokens possible.)
   
 * Transactions (Ethereum transactions are network messages that include (among other things) a sender, recipient, value, and data payload.)
   
-* Data Structures (Ethereum’s state is stored locally on each node as a database, which contains the transactions and system state in a serialized     hashed data structure called a Merkle Patricia Tree.)
+* Data Structures (Ethereum’s state is stored locally on each node as a database, which contains the transactions and system state in a serialized hashed data structure called a Merkle Patricia Tree.)
   
-* Gas (A step of execution of a smart contract. Different operations consume different amounts of gas. To prevent denial-of-service attacks,           transactions specify a maximum gas which bounds the steps of execution before a transaction is reverted.)
+* Gas (A step of execution of a smart contract. Different operations consume different amounts of gas. To prevent denial-of-service attacks, transactions specify a maximum gas which bounds the steps of execution before a transaction is reverted.)
   
-* Blocks (The unit of update to the blockchain. A block consists of a header identifying its position in the chain and other metadata, and a body      that contains a list of transactions, and data structures that describe the new state after executing those transactions.)
+* Blocks (The unit of update to the blockchain. A block consists of a header identifying its position in the chain and other metadata, and a body that contains a list of transactions, and data structures that describe the new state after executing those transactions.)
   
-* Consensus and finality (Ethereum’s consensus rules are defined in the reference specification, the Yellow Paper <a       href="https://ethereum.github.io/yellowpaper/paper.pdf" rel="noreferrer">(see Further Reading)</a>
+* Consensus and finality (Ethereum’s consensus rules are defined in the reference specification, the Yellow Paper <a href="https://ethereum.github.io/yellowpaper/paper.pdf" rel="noreferrer">(see Further Reading)</a>
 
-* Private Key (A private key is a long, randomly generated number that serves as a cryptographic key in blockchain networks. It is used to sign         transactions and prove ownership of blockchain addresses and the assets within them.)
+* Private Key (A private key is a long, randomly generated number that serves as a cryptographic key in blockchain networks. It is used to sign transactions and prove ownership of blockchain addresses and the assets within them.)
   
-* Public Key (A public key is a cryptographic code used to facilitate secure transactions and interactions on a blockchain network. It is derived       from a private key and can be openly shared without compromising the security of the associated assets.)
+* Public Key (A public key is a cryptographic code used to facilitate secure transactions and interactions on a blockchain network. It is derived from a private key and can be openly shared without compromising the security of the associated assets.)
   
-* Node (A node is a computer that runs the Ethereum client software and is connected to other nodes on the network. These nodes work together to       verify transactions )
+* Node (A node is a computer that runs the Ethereum client software and is connected to other nodes on the network. These nodes work together to verify transactions )
   
-* JSON-RPC (JSON-RPC is used to communicate with the node through a Web3 provider, a software component that exposes a JSON-RPC API to the client     application)
+* JSON-RPC (JSON-RPC is used to communicate with the node through a Web3 provider, a software component that exposes a JSON-RPC API to the client application)
   
 * Web3 Provider (Providers take JSON-RPC requests and return the response.)
 
