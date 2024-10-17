@@ -25,31 +25,31 @@ Celo's mobile-first approach aims to make decentralized finance (DeFi) accessibl
 <details>
   <summary>COMMON TERMS IN WEB3 DEVELOPMENT.</summary>
 
-* <b>Blockchain:</b> (A database maintained by a distributed set of computers that do not share a trust relationship or common ownership. This arrangement     is referred to as decentralized. The content of a blockchain's database, or ledger, is authenticated using cryptographic techniques, preventing     its contents being edited or removed except according to a protocol's consensus mechanism)
+<b>Blockchain:</b> (A database maintained by a distributed set of computers that do not share a trust relationship or common ownership. This arrangement     is referred to as decentralized. The content of a blockchain's database, or ledger, is authenticated using cryptographic techniques, preventing     its contents being edited or removed except according to a protocol's consensus mechanism)
   
-* Wallets are tools that create accounts, manage keys, and help users transact on a blockchain network.
+Wallets are tools that create accounts, manage keys, and help users transact on a blockchain network.
   
-* <b>Smart Contract:</b> (Smart contracts are intructions embeded within code which are executed automatically by a computer program or a transaction protocol. They make actions such as transferring cryptocurrencies or other tokens possible.)
+<b>Smart Contract:</b> (Smart contracts are intructions embeded within code which are executed automatically by a computer program or a transaction protocol. They make actions such as transferring cryptocurrencies or other tokens possible.)
   
-* <b>Transactions:</b> (Ethereum transactions are network messages that include (among other things) a sender, recipient, value, and data payload.)
+<b>Transactions:</b> (Ethereum transactions are network messages that include (among other things) a sender, recipient, value, and data payload.)
   
-* <b>Gas:</b> (A step of execution of a smart contract. Different operations consume different amounts of gas. To prevent denial-of-service attacks, transactions specify a maximum gas which bounds the steps of execution before a transaction is reverted.)
+<b>Gas:</b> (A step of execution of a smart contract. Different operations consume different amounts of gas. To prevent denial-of-service attacks, transactions specify a maximum gas which bounds the steps of execution before a transaction is reverted.)
   
-* <b>Blocks:</b> (The unit of update to the blockchain. A block consists of a header identifying its position in the chain and other metadata, and a body that contains a list of transactions, and data structures that describe the new state after executing those transactions.)
+<b>Blocks:</b> (The unit of update to the blockchain. A block consists of a header identifying its position in the chain and other metadata, and a body that contains a list of transactions, and data structures that describe the new state after executing those transactions.)
   
-* <b>Consensus and finality:</b> (Ethereum uses Proof of Stake (PoS) for consensus, with finality achieved through the Casper FFG mechanism, which ensures that confirmed blocks are permanent. Celo also uses PoS combined with PBFT (Practical Byzantine Fault Tolerance), providing fast finality, meaning blocks are finalized almost instantly once added.)</a>
+<b>Consensus and finality:</b> (Ethereum uses Proof of Stake (PoS) for consensus, with finality achieved through the Casper FFG mechanism, which ensures that confirmed blocks are permanent. Celo also uses PoS combined with PBFT (Practical Byzantine Fault Tolerance), providing fast finality, meaning blocks are finalized almost instantly once added.)</a>
 
-* <b>Private Key:</b> (A private key is a long, randomly generated number that serves as a cryptographic key in blockchain networks. It is used to sign transactions and prove ownership of blockchain addresses and the assets within them.)
+<b>Private Key:</b> (A private key is a long, randomly generated number that serves as a cryptographic key in blockchain networks. It is used to sign transactions and prove ownership of blockchain addresses and the assets within them.)
   
-* <b>Public Key:</b> (A public key is a cryptographic code used to facilitate secure transactions and interactions on a blockchain network. It is derived from a private key and can be openly shared without compromising the security of the associated assets.)
+<b>Public Key:</b> (A public key is a cryptographic code used to facilitate secure transactions and interactions on a blockchain network. It is derived from a private key and can be openly shared without compromising the security of the associated assets.)
   
-* <b>Node:</b> (A node is a computer that runs the Ethereum client software and is connected to other nodes on the network. These nodes work together to verify transactions )
+<b>Node:</b> (A node is a computer that runs the Ethereum client software and is connected to other nodes on the network. These nodes work together to verify transactions )
   
-* <b>JSON-RPC:</b> (JSON-RPC is used to communicate with the node through a Web3 provider, a software component that exposes a JSON-RPC API to the client application)
+<b>JSON-RPC:</b> (JSON-RPC is used to communicate with the node through a Web3 provider, a software component that exposes a JSON-RPC API to the client application)
   
-* <b>Web3 Provider:</b> (Providers take JSON-RPC requests and return the response.)
+<b>Web3 Provider:</b> (Providers take JSON-RPC requests and return the response.)
 
-* <b>Contract ABI:</b> ( "ABI" stands for Application Binary Interface in the context of Ethereum smart contracts. It specifies how to interact with a smart contract deployed on the blockchain.)
+<b>Contract ABI:</b> ( "ABI" stands for Application Binary Interface in the context of Ethereum smart contracts. It specifies how to interact with a smart contract deployed on the blockchain.)
 
 </details>
 
