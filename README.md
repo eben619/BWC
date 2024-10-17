@@ -106,26 +106,50 @@ Basic Structure Of A Function In Solidity:
 
 
 <details>
-  <summary>⌨️ Writing A Simple Savings Smart Contract</summary><br>
+  <summary>Writing A Simple Savings Smart Contract</summary><br>
 
 
 
 ```
 
 // SPDX-License-Identifier: MIT
-// Compatible with OpenZeppelin Contracts ^5.0.0
-pragma solidity ^0.8.20;
+pragma solidity ^0.8.0;
 
-import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+contract Savings {
+    mapping(address => uint256) public balances;
 
-contract Ebenezer is ERC20 {
-    constructor() ERC20("Ebenezer", "$EBN") {
-        _mint(msg.sender, 100000 * 10 ** decimals());
+    // Deposit funds into the savings account
+    function deposit() public payable {
+        require(msg.value > 0, "Deposit must be greater than 0");
+        balances[msg.sender] += msg.value;
+    }
+
+    // Withdraw funds from the savings account
+    function withdraw(uint256 _amount) public {
+        require(balances[msg.sender] >= _amount, "Insufficient balance");
+        balances[msg.sender] -= _amount;
+        payable(msg.sender).transfer(_amount);
+    }
+
+    // Check balance
+    function getBalance() public view returns (uint256) {
+        return balances[msg.sender];
     }
 }
 
 
 ```
+
+mapping(address => uint256) public balances;: This creates a storage structure that links each user’s address to their balance in the contract.
+Deposit Function:
+
+function deposit() public payable: Allows users to send Ether to the contract. The msg.value represents the amount of Ether sent, and this is added to the user's balance.
+Withdraw Function:
+
+function withdraw(uint256 _amount): Lets users withdraw a specified amount of Ether from their balance. It checks if they have enough funds, deducts the amount, and transfers the Ether to them.
+
+function getBalance(): Returns the balance of the caller’s account.
+This contract allows basic saving functionality, where users can deposit, withdraw, and check their balance.
 
 </details>
 
