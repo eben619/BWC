@@ -5,7 +5,7 @@
 
 <details>
   <summary>USEFUL LINKS</summary>
-  
+  <br>
 * <a href="http://alfajores.celoscan.io" rel="noreferrer">Celo's Alfajores Testnet Explorer</a><br>
 * <a href="http://faucet.celo.org/alfajores" rel="noreferrer">Funding Your Wallet With Testnet Tokens</a><br>
 * <a href="https://metamask.io/download/" target='_blank'>Click Here To Download Metamask</a><br>
@@ -15,7 +15,7 @@
 
 <details>
   <summary>INTRODUCTION</summary>
-
+<br>
 Celo Foundation’s Role in the Web3 Ecosystem
 Celo Foundation is at the forefront of the Web3 revolution, driving the adoption of decentralized finance and promoting financial inclusion worldwide. By leveraging blockchain technology, the foundation is working to create a more equitable and accessible financial system, paving the way for a future where everyone can participate in the global economy.
 Celo's mobile-first approach aims to make decentralized finance (DeFi) accessible to smartphone users worldwide, especially in regions with limited access to traditional banking.<br>
@@ -55,7 +55,7 @@ Wallets are tools that create accounts, manage keys, and help users transact on 
 
 <details>
   <summary>INTRODUTION TO SOLIDITY</summary>
-
+<br>
 Solidity is an EVM compatible language which supports a variety of data types that can be categorized mainly into value types and reference types. Other types such as function types and Tuples also exist.
 
 <b>Value Types</b>-
@@ -91,7 +91,7 @@ Basic Structure Of A Function In Solidity:
 
 <details>
   <summary>CELO COMPOSER</summary>
-
+<br>
 A DApp is composed of at least:
 
 * Smart Contracts: The backend code that runs on a blockchain (e.g., Solidity contracts on Ethereum or Celo).
@@ -175,6 +175,7 @@ Run the following commands from the packages/react-app folder to start the proje
 
 <details>
   <summary>WRITING A SIMPLE SAVINGS CONTRACT</summary>
+<br>
 
 ```
 
@@ -224,6 +225,7 @@ This contract allows basic saving functionality, where users can deposit, withdr
 
 <details>
   <summary>COMPILE & DEPLOY THE CONTRACT USING HARDHAT</summary>
+  <br>
 After writing your savings contract, you can compile by using
 
 ```  
