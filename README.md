@@ -155,9 +155,18 @@ This contract allows basic saving functionality, where users can deposit, withdr
 </details>
 
 <details>
-  <summary>🌐 Common Terms Used In Web3.</summary><br>
+  <summary>🌐Compile & deploy the contract using hardhat</summary><br>
+After writing your savings contract, you can compile by using
 
+```  
+npx hardhat compile
+```
 
+After sucessful compilation, use the command below to deploy.
+
+```
+npx hardhat run scripts/deploy.ts --network alfajores
+```
 
 </details>
 <details>
@@ -169,155 +178,10 @@ This contract allows basic saving functionality, where users can deposit, withdr
 
 
  
-    ### 🌐 What Is Minipay?
+### 🌐 What Is Minipay?
 MiniPay is a lightweight stablecoin wallet integrated within the Opera Mini browser, designed specifically for users in emerging markets.MiniPay is focused on financial inclusion, particularly for the unbanked or underbanked populations. Transactions are inexpensive, with minimal fees (less than 0.01 cUSD), and the wallet is optimized for regions with poor connectivity, offering a user-friendly solution for secure, accessible financial services.
 MiniPay we has over 2.5 million wallets and over 250,000 daily active users.
 
-### ⌨️ Writing A Simple Smart Contract
-
-```
-
-// SPDX-License-Identifier: MIT
-// Compatible with OpenZeppelin Contracts ^5.0.0
-pragma solidity ^0.8.20;
-
-import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
-
-contract Ebenezer is ERC20 {
-    constructor() ERC20("Ebenezer", "$EBN") {
-        _mint(msg.sender, 100000 * 10 ** decimals());
-    }
-}
-
-
-```
-<detail>
-<summary>Without the imports from openzeppelin a normal ERC20 contract would look like this.</summary>
-
-
-```
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
-
-contract EbenezerToken {
-    string public name = "Ebenezer";
-    string public symbol = "EBN";
-    uint8 public decimals = 18;
-    uint256 public totalSupply;
-
-    mapping(address => uint256) private balances;
-    mapping(address => mapping(address => uint256)) private allowances;
-
-    event Transfer(address indexed from, address indexed to, uint256 value);
-    event Approval(address indexed owner, address indexed spender, uint256 value);
-
-    constructor() {
-        totalSupply = 10000 * 10 ** uint256(decimals);
-        balances[msg.sender] = totalSupply;
-        emit Transfer(address(0), msg.sender, totalSupply);
-    }
-
-    function balanceOf(address account) public view returns (uint256) {
-        return balances[account];
-    }
-
-    function transfer(address recipient, uint256 amount) public returns (bool) {
-        require(recipient != address(0), "Transfer to the zero address");
-        require(balances[msg.sender] >= amount, "Transfer amount exceeds balance");
-
-        balances[msg.sender] -= amount;
-        balances[recipient] += amount;
-        emit Transfer(msg.sender, recipient, amount);
-        return true;
-    }
-
-    function approve(address spender, uint256 amount) public returns (bool) {
-        require(spender != address(0), "Approve to the zero address");
-
-        allowances[msg.sender][spender] = amount;
-        emit Approval(msg.sender, spender, amount);
-        return true;
-    }
-
-    function allowance(address owner, address spender) public view returns (uint256) {
-        return allowances[owner][spender];
-    }
-
-    function transferFrom(address sender, address recipient, uint256 amount) public returns (bool) {
-        require(sender != address(0), "Transfer from the zero address");
-        require(recipient != address(0), "Transfer to the zero address");
-        require(balances[sender] >= amount, "Transfer amount exceeds balance");
-        require(allowances[sender][msg.sender] >= amount, "Transfer amount exceeds allowance");
-
-        balances[sender] -= amount;
-        balances[recipient] += amount;
-        allowances[sender][msg.sender] -= amount;
-        emit Transfer(sender, recipient, amount);
-        return true;
-    }
-
-    function mint(address account, uint256 amount) public returns (bool) {
-        require(account != address(0), "Mint to the zero address");
-
-        totalSupply += amount;
-        balances[account] += amount;
-        emit Transfer(address(0), account, amount);
-        return true;
-    }
-
-    function burn(uint256 amount) public returns (bool) {
-        require(balances[msg.sender] >= amount, "Burn amount exceeds balance");
-
-        totalSupply -= amount;
-        balances[msg.sender] -= amount;
-        emit Transfer(msg.sender, address(0), amount);
-        return true;
-    }
-}
-
-
-```
-</detail>
-
-### 📚 Syntax Explanation
-
-<b>
-Inheritance in Solidity allows a contract to use the functions, events, and state variables of another contract. This enables code reuse and modularity. 
-</b>
-
-When Ebenezer inherits from ERC20, it means that Ebenezer will have all the functionalities of the ERC20 contract, such as token transfer, balance checking, and allowance handling.
-
-<b>contract Ebenezer:</b>
-This declares a new contract named Ebenezer.
-
-<b>is ERC20:</b>
-The keyword is indicates that the Ebenezer contract inherits from another contract, in this case, the ERC20 contract.
-The imported ERC20 contract is provided by OpenZeppelin that implements the standard ERC20 token functionality.
-The syntax constructor() ERC20("Ebenezer", "EBN") is actually shorthand for calling the constructor of the inherited ERC20 contract. Here’s a detailed explanation:
-
-<b>*constructor():</B>
-Declares the constructor function of the EbenezerToken contract.
-
-<b>*ERC20("Ebenezer", "EBN"):</b>
-Calls the constructor of the parent ERC20 contract, passing in the name and symbol for the token.
-
-In essence, this constructor setup ensures that when the EbenezerToken is deployed, it is properly initialized as an ERC20 token with the specified name and symbol, and it also creates the initial token supply.
-
-The line <b>_mint(msg.sender, 100000 * 10 ** decimals())</b> in an ERC20 contract mints new tokens and assigns them to the deployer's address. Here's a breakdown of what each part does:
-
-<b>_mint:</b> 
-This function is an internal function provided by OpenZeppelin's ERC20 contract. It creates new tokens and assigns them to a specified address, increasing the total supply of tokens.
-
-<b>msg.sender:</b>
-This is a global variable in Solidity that refers to the address that is currently calling the function. In the context of a constructor, msg.sender is the address that deployed the contract.
-
-<b>10000 * 10 ** decimals():</b> This calculates the number of tokens to be minted, taking into account the token's decimal places. Here's how this calculation works:
-
-<b>decimals()</b> is a function in the ERC20 contract that returns the number of decimal places the token uses, typically 18 for most ERC20 tokens.
-
-<b>10 ** decimals()</b> calculates 10 to the power of the number of decimals, which in the case of 18 decimals would be 10^18.
-
-<b>10000 * 10 ** decimals()</b> then multiplies 10,000 by 10^18 to get the total number of smallest units (often called "wei" in the context of ERC20 tokens) for 10,000 tokens.
 
 ### 🔧 Compile the Contract
 With the contract above as the active tab in the Editor, compile the contract.
