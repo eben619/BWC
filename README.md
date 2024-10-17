@@ -86,13 +86,10 @@ Function types- Can be internal or external (e.g., function (uint) external retu
 Tuples- Group multiple values (e.g., (uint, string, address)).<br>
 
 Basic Structure Of A Function In Solidity: 
-
 <img src="https://github.com/eben619/Celo_Africa_Dao-Ghana_University_Tour/blob/main/function.avif" width="500px">
+
 </details>
 
-Basic Structure Of A Function In Solidity: 
-
-<img src="https://github.com/eben619/Celo_Africa_Dao-Ghana_University_Tour/blob/main/function.avif" width="500px"><br>
 
 <details>
   <summary>🌐 Common Terms Used In Web3.</summary><br>
