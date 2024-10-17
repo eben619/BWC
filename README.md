@@ -18,6 +18,8 @@
 * <a href="http://alfajores.celoscan.io" rel="noreferrer">Celo's Alfajores Testnet Explorer</a><br>
 * <a href="http://faucet.celo.org/alfajores" rel="noreferrer">Funding Your Wallet With Testnet Tokens</a><br>
 * <a href="https://metamask.io/download/" target='_blank'>Click Here To Download Metamask</a><br>
+* <a href="https://docs.celo.org/developer/build-on-minipay/overview" target='_blank'>Build On Minipay</a><br>
+* <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXogc7lHEgz9ajFhPEVyY7y33_esNzHgR3E8bH4LVz4Yconw/viewform" target='_blank'>Feedback Form</a><br>
 
 
 </details>
@@ -25,9 +27,25 @@
 <details>
   <summary>INTRODUCTION</summary>
 <br>
+  
 Celo Foundation’s Role in the Web3 Ecosystem
 Celo Foundation is at the forefront of the Web3 revolution, driving the adoption of decentralized finance and promoting financial inclusion worldwide. By leveraging blockchain technology, the foundation is working to create a more equitable and accessible financial system, paving the way for a future where everyone can participate in the global economy.
+
 Celo's mobile-first approach aims to make decentralized finance (DeFi) accessible to smartphone users worldwide, especially in regions with limited access to traditional banking.<br>
+
+<b>Why Build On Celo</b>
+<br>
+Celo is fully EVM-compatible, offering the same development experience as Ethereum with improved scalability and lower costs.
+
+<b>Built for Everyday Users:</b>
+<br>
+Celo is designed with features that lower the entry barrier for those new to cryptocurrency.
+
+<b>Fee Abstraction:</b> Users can pay transaction fees with several different tokens, making payments simple and flexible.
+
+<b>Sub-Cent Fees:</b> Celo maintains low gas fees, often below a cent, keeping transactions affordable.
+
+<b>Native Stablecoins:</b> Celo provides native stablecoins like cUSD, cEUR, cREAL, and cKES, offering a stable way to send and receive money. Check out Mento to learn more.
 
 </details>
 
@@ -609,8 +627,9 @@ export default function Home() {
 </details>
 
 <details>
-  <summary>PROJECT IDEAS THAT CAN BE IMPLEMENTED USING THIS TEMPLATE</summary>
+  <summary>SOME PROJECT IDEAS THAT CAN BE IMPLEMENTED USING THE MINIPAY TEMPLATE</summary>
   <br>
+  
 <b>Micro-Payments Platform:</b> A system where users can make small, fast payments for services like articles, songs, or e-books.
 
 <b>Subscription-Based Content:</b> Create a pay-per-use subscription system for premium content, such as online courses or tutorials.
