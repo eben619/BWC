@@ -219,7 +219,7 @@ Lets users withdraw a specified amount of Ether from their balance. It checks if
 <b>function getBalance():</b>
 Returns the balance of the caller’s account.
 
-This contract allows basic saving functionality, where users can deposit, withdraw, and check their balance.
+This contract allows basic saving functionality, where users can deposit, withdraw, and check their balance. You can add more functions to improve the functionality of your DApp.
 
 </details>
 
@@ -237,6 +237,12 @@ After sucessful compilation, use the command below to deploy to Alfajores Testne
 ```
 npx hardhat run scripts/deploy.ts --network alfajores
 ```
+
+</details>
+<details>
+  <summary>BUILDING A FRONTEND TO INTERACT WITH YOUR CONTRACT</summary>
+
+
 
 </details>
 <details>
