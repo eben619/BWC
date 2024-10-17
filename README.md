@@ -138,16 +138,16 @@ contract Savings {
 
 ```
 
-# mapping(address => uint256) public balances;:
+* mapping(address => uint256) public balances;:
 This creates a storage structure that links each user’s address to their balance in the contract.
 
-# function deposit() public payable:
+* function deposit() public payable:
 Allows users to send Ether to the contract. The msg.value represents the amount of Ether sent, and this is added to the user's balance.
 
-# function withdraw(uint256 _amount):
+* function withdraw(uint256 _amount):
 Lets users withdraw a specified amount of Ether from their balance. It checks if they have enough funds, deducts the amount, and transfers the Ether to them.
 
-# function getBalance():
+* function getBalance():
 Returns the balance of the caller’s account.
 
 This contract allows basic saving functionality, where users can deposit, withdraw, and check their balance.
