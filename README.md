@@ -241,10 +241,359 @@ npx hardhat run scripts/deploy.ts --network alfajores
 </details>
 <details>
   <summary>BUILDING A FRONTEND TO INTERACT WITH YOUR CONTRACT</summary>
-
+<br>
 We are going to create a simple frontend to interact with our contract. We are going to create a deposit component, a withdraw component, and a component to display our saving balance.
 
+Deposit.tsx Component
+```
+import React, { useState } from "react";
+import { useWeb3 } from "@/contexts/useWeb3";  // Use the updated Web3 hook
+
+interface DepositProps {
+  savingsContractAddress: string;
+  abi: any;
+}
+
+const Deposit: React.FC<DepositProps> = ({ savingsContractAddress, abi }) => {
+  const { deposit } = useWeb3();  // Get the deposit function from useWeb3
+  const [depositAmount, setDepositAmount] = useState<string>("");
+
+  const handleDeposit = async () => {
+    try {
+      const tx = await deposit(depositAmount);  // Call deposit function
+      if (tx) {
+        console.log("Deposit successful", tx);
+      }
+    } catch (error) {
+      console.error("Deposit failed", error);
+    }
+  };
+
+  return (
+    <div className="flex flex-col items-center">
+      <h3 className="text-xl font-bold mb-4">Deposit</h3>
+      <input
+        type="text"
+        value={depositAmount}
+        onChange={(e) => setDepositAmount(e.target.value)}
+        placeholder="Amount to deposit"
+        className="w-full border-2 border-yellow-500 rounded-lg p-2 mb-4"
+      />
+      <button
+        onClick={handleDeposit}
+        className="w-full bg-yellow-500 text-white font-bold py-2 px-4 rounded-lg"
+      >
+        Deposit
+      </button>
+    </div>
+  );
+};
+
+export default Deposit;
+
+```
+<br>
+Withdraw.tsx Component
+```
+import React, { useState } from "react";
+
+interface WithdrawProps {
+  savingsContractAddress: string;
+  abi: any;
+  withdraw: (amount: string) => Promise<any>; // Expect withdraw function from useWeb3
+  fetchBalance: () => void; // Callback to refresh the balance after withdrawal
+}
+
+const Withdraw: React.FC<WithdrawProps> = ({ savingsContractAddress, abi, withdraw, fetchBalance }) => {
+  const [withdrawAmount, setWithdrawAmount] = useState<string>("");
+
+  const handleWithdraw = async () => {
+    try {
+      const tx = await withdraw(withdrawAmount); // Call the withdraw function
+      await tx.wait(); // Wait for the transaction to be mined
+      fetchBalance(); // Refresh balance after withdrawal
+      console.log("Withdrawal successful", tx);
+    } catch (error) {
+      console.error("Withdrawal failed", error);
+    }
+  };
+
+  return (
+    <div>
+      <h3>Withdraw</h3>
+      <input
+        type="text"
+        value={withdrawAmount}
+        onChange={(e) => setWithdrawAmount(e.target.value)}
+        placeholder="Amount to withdraw"
+      />
+      <button onClick={handleWithdraw}>Withdraw</button>
+    </div>
+  );
+};
+
+export default Withdraw;
+
+```
+<br>
+DisplayBalance.tsx Component
+```
+import React, { useEffect } from "react";
+
+interface DisplayBalanceProps {
+  balance: string | undefined;
+  fetchBalance: () => void;
+}
+
+const DisplayBalance: React.FC<DisplayBalanceProps> = ({ balance, fetchBalance }) => {
+  useEffect(() => {
+    fetchBalance(); // Fetch balance on load
+  }, [fetchBalance]);
+
+  return (
+    <div>
+      <p>Balance: {balance ? `${balance} CELO` : "Loading..."}</p>
+      <button onClick={fetchBalance}>Refresh Balance</button>
+    </div>
+  );
+};
+
+export default DisplayBalance;
+
+```
+<br>
+New useWeb3.ts file
+```
+import { useState } from "react";
+import {
+  createPublicClient,
+  createWalletClient,
+  custom,
+  parseEther,
+  http,
+  TransactionReceipt,
+} from "viem";
+import { celoAlfajores } from "viem/chains";
+import SavingsABI from "@/abi/Savings.json"; // Make sure this path is correct
+
+const publicClient = createPublicClient({
+  chain: celoAlfajores,
+  transport: http(),
+});
+
+const savingsContractAddress = "0x94E4a792aAa67a01b6a6B3FaA2bA6278c9D7bCD3";
+
+export const useWeb3 = () => {
+  const [address, setAddress] = useState<`0x${string}` | null>(null); // Use template literal type for address
+
+  // Fetch user address
+  const getUserAddress = async () => {
+    if (typeof window !== "undefined" && window.ethereum) {
+      let walletClient = createWalletClient({
+        transport: custom(window.ethereum),
+        chain: celoAlfajores,
+      });
+
+      let [userAddress] = await walletClient.getAddresses();
+      if (userAddress) {
+        setAddress(userAddress as `0x${string}`);
+      }
+    }
+  };
+
+  // Fetch balance
+  const getBalance = async () => {
+    if (address) {
+      const balance = await publicClient.getBalance({ address });
+      const formattedBalance = (Number(balance) / 1e18).toFixed(4); // Convert from Wei and format to 4 decimals
+      return formattedBalance;
+    }
+    return "0.0000";
+  };
+
+  // Deposit function
+  const deposit = async (amount: string): Promise<TransactionReceipt> => {
+    let walletClient = createWalletClient({
+      transport: custom(window.ethereum),
+      chain: celoAlfajores,
+    });
+
+    let [userAddress] = await walletClient.getAddresses();
+    const amountInWei = parseEther(amount);
+
+    const tx = await walletClient.writeContract({
+      address: savingsContractAddress,
+      abi: SavingsABI.abi,
+      functionName: "deposit",
+      account: userAddress as `0x${string}`, // Ensure it's the correct type
+      value: amountInWei,
+    });
+
+    const receipt = await publicClient.waitForTransactionReceipt({ hash: tx });
+    return receipt;
+  };
+
+  // Withdraw function
+  const withdraw = async (amount: string): Promise<TransactionReceipt> => {
+    let walletClient = createWalletClient({
+      transport: custom(window.ethereum),
+      chain: celoAlfajores,
+    });
+
+    let [userAddress] = await walletClient.getAddresses();
+    const amountInWei = parseEther(amount);
+
+    const tx = await walletClient.writeContract({
+      address: savingsContractAddress,
+      abi: SavingsABI.abi,
+      functionName: "withdraw",
+      account: userAddress as `0x${string}`, // Ensure it's the correct type
+      args: [amountInWei],
+    });
+
+    const receipt = await publicClient.waitForTransactionReceipt({ hash: tx });
+    return receipt;
+  };
+
+  return {
+    address,
+    getUserAddress,
+    getBalance,
+    deposit,
+    withdraw,
+  };
+};
+
+```
+<br>
+New index.tsx Component that imports the Deposit, Withdraw and Display Balance component.
+```
+/* eslint-disable react-hooks/exhaustive-deps */
+import PrimaryButton from "@/components/Button";
+import { useWeb3 } from "@/contexts/useWeb3";
+import { useState, useEffect } from "react";
+
+export default function Home() {
+  const {
+    address,
+    getUserAddress,
+    getBalance,  // Fetch balance functionality
+    deposit,     // Deposit functionality
+    withdraw,    // Withdraw functionality
+  } = useWeb3();
+
+  const [balance, setBalance] = useState<string>("0");
+  const [depositAmount, setDepositAmount] = useState<string>("");
+  const [withdrawAmount, setWithdrawAmount] = useState<string>("");
+
+  useEffect(() => {
+    getUserAddress();
+  }, []);
+
+  useEffect(() => {
+    if (address) {
+      fetchBalance();
+    }
+  }, [address]);
+
+  async function fetchBalance() {
+    if (address) {
+      try {
+        const fetchedBalance = await getBalance();
+        setBalance(fetchedBalance.toString());  // Convert balance from bigint to string
+      } catch (error) {
+        console.error("Error fetching balance:", error);
+      }
+    }
+  }
+
+  async function handleDeposit() {
+    if (address && depositAmount) {
+      try {
+        await deposit(depositAmount);  // Call deposit from useWeb3
+        fetchBalance();
+      } catch (error) {
+        console.error("Deposit failed:", error);
+      }
+    }
+  }
+
+  async function handleWithdraw() {
+    if (address && withdrawAmount) {
+      try {
+        await withdraw(withdrawAmount);  // Call withdraw from useWeb3
+        fetchBalance();
+      } catch (error) {
+        console.error("Withdrawal failed:", error);
+      }
+    }
+  }
+
+  return (
+    <div className="flex flex-col justify-center items-center">
+      {!address && (
+        <div className="h1">Please install Metamask and connect.</div>
+      )}
+      {address && (
+        <div className="h1">Welcome! Let's manage your savings.</div>
+      )}
+
+      {address && (
+        <>
+          <div className="h2 text-center">
+            Your address:{" "}
+            <span className="font-bold text-sm">{address}</span>
+          </div>
+
+          {/* Deposit functionality */}
+          <div className="w-full px-3 mt-7">
+            <input
+              type="text"
+              value={depositAmount}
+              onChange={(e) => setDepositAmount(e.target.value)}
+              placeholder="Deposit amount in CELO"
+            />
+            <PrimaryButton
+              onClick={handleDeposit}
+              title="Deposit CELO"
+              widthFull
+            />
+          </div>
+
+          {/* Withdraw functionality */}
+          <div className="w-full px-3 mt-7">
+            <input
+              type="text"
+              value={withdrawAmount}
+              onChange={(e) => setWithdrawAmount(e.target.value)}
+              placeholder="Withdraw amount in CELO"
+            />
+            <PrimaryButton
+              onClick={handleWithdraw}
+              title="Withdraw CELO"
+              widthFull
+            />
+          </div>
+
+          {/* Display Balance */}
+          <div className="w-full px-3 mt-7">
+            <p className="font-bold">Balance: {balance} CELO</p>
+            <PrimaryButton
+              onClick={fetchBalance}
+              title="Refresh Balance"
+              widthFull
+            />
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
+```
 </details>
+
+
 <details>
   <summary>Common Terms Used In Web3.</summary>
 
