@@ -19,7 +19,6 @@
 * <a href="http://faucet.celo.org/alfajores" rel="noreferrer">Funding Your Wallet With Testnet Tokens</a><br>
 * <a href="https://metamask.io/download/" target='_blank'>Click Here To Download Metamask</a><br>
 * <a href="https://docs.celo.org/developer/build-on-minipay/overview" target='_blank'>Build On Minipay</a><br>
-* <a href="https://metamask.io/download/" target='_blank'>Click Here To Download Metamask</a><br>
 
 
 </details>
