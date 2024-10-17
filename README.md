@@ -296,6 +296,7 @@ export default Deposit;
 ```
 <br>
 <b>Withdraw.tsx Component</b>
+
 ```
 import React, { useState } from "react";
 
@@ -339,6 +340,7 @@ export default Withdraw;
 ```
 <br>
 <b>DisplayBalance.tsx Component</b>
+
 ```
 import React, { useEffect } from "react";
 
@@ -365,6 +367,7 @@ export default DisplayBalance;
 ```
 <br>
 <b>New useWeb3.ts file</b>
+
 ```
 import { useState } from "react";
 import {
@@ -469,6 +472,7 @@ export const useWeb3 = () => {
 ```
 <br>
 <b>New index.tsx Component that imports the Deposit, Withdraw and Display Balance component.</b>
+
 ```
 /* eslint-disable react-hooks/exhaustive-deps */
 import PrimaryButton from "@/components/Button";
