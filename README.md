@@ -628,6 +628,7 @@ export default function Home() {
 <details>
   <summary>PROJECT IDEAS THAT CAN BE IMPLEMENTED USING THE MINIPAY TEMPLATE</summary>
   <br>
+  
 <b>Micro-Payments Platform:</b> A system where users can make small, fast payments for services like articles, songs, or e-books.
 
 <b>Subscription-Based Content:</b> Create a pay-per-use subscription system for premium content, such as online courses or tutorials.
