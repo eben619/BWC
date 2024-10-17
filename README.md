@@ -626,7 +626,7 @@ export default function Home() {
 </details>
 
 <details>
-  <summary>PROJECT IDEAS THAT CAN BE IMPLEMENTED USING THE MINIPAY TEMPLATE</summary>
+  <summary>SOME PROJECT IDEAS THAT CAN BE IMPLEMENTED USING THE MINIPAY TEMPLATE</summary>
   <br>
   
 <b>Micro-Payments Platform:</b> A system where users can make small, fast payments for services like articles, songs, or e-books.
