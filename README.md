@@ -100,8 +100,8 @@ A DApp is composed of at least:
 * Private Key: A key used to sign transactions, especially in non-custodial wallets.
 * Wallet Integration: Interaction with wallets like MetaMask or Valora for user authentication and transaction signing.
 
-Celo Composer allows you to quickly build, deploy, and iterate on decentralized applications using Celo. It provides a number of template frameworks, examples, and Celo specific functionality to help you get started with your next DApp. It has the wallet integration and other key functionalities needed in building a DApp already implemented.
-  
+<a href="https://github.com/celo-org/celo-composer/blob/main/README.md">CELO COMPOSER</a> allows you to quickly build, deploy, and iterate on decentralized applications using Celo. It provides a number of template frameworks, examples, and Celo specific functionality to help you get started with your next DApp. It has the wallet integration and other key functionalities needed in building a DApp already implemented.
+
 * Prerequisites
    * <a href='https://nodejs.org/en/download/package-manager'>Node.js (v20 or higher)</a>
    * <a href="https://git-scm.com/downloads">Git (v2.38 or higher)</a>
