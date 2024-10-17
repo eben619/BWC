@@ -26,18 +26,24 @@
 <details>
   <summary>INTRODUCTION</summary>
 <br>
+  
 Celo Foundation’s Role in the Web3 Ecosystem
 Celo Foundation is at the forefront of the Web3 revolution, driving the adoption of decentralized finance and promoting financial inclusion worldwide. By leveraging blockchain technology, the foundation is working to create a more equitable and accessible financial system, paving the way for a future where everyone can participate in the global economy.
+
 Celo's mobile-first approach aims to make decentralized finance (DeFi) accessible to smartphone users worldwide, especially in regions with limited access to traditional banking.<br>
 
-<b>Why Build On Celo</b><br>
+<b>Why Build On Celo</b>
+<br>
 Celo is fully EVM-compatible, offering the same development experience as Ethereum with improved scalability and lower costs.
 
 <b>Built for Everyday Users:</b>
+<br>
 Celo is designed with features that lower the entry barrier for those new to cryptocurrency.
 
 <b>Fee Abstraction:</b> Users can pay transaction fees with several different tokens, making payments simple and flexible.
+
 <b>Sub-Cent Fees:</b> Celo maintains low gas fees, often below a cent, keeping transactions affordable.
+
 <b>Native Stablecoins:</b> Celo provides native stablecoins like cUSD, cEUR, cREAL, and cKES, offering a stable way to send and receive money. Check out Mento to learn more.
 
 </details>
