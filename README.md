@@ -51,7 +51,7 @@ Celo's mobile-first approach aims to make decentralized finance (DeFi) accessibl
 
 * <b>Contract ABI:</b> ( "ABI" stands for Application Binary Interface in the context of Ethereum smart contracts. It specifies how to interact with a smart contract deployed on the blockchain.)
 
-</details><br>
+</details>
 
 <details>
   <summary>INTRODUTION TO SOLIDITY</summary>
@@ -170,12 +170,11 @@ Run the following commands from the packages/react-app folder to start the proje
    yarn react-app:dev
 ```
 
-
 </details>
 
 
 <details>
-  <summary>Writing A Simple Savings Smart Contract</summary><br>
+  <summary>WRITING A SIMPLE SAVINGS CONTRACT</summary>
 
 ```
 
@@ -207,16 +206,16 @@ contract Savings {
 
 ```
 
-* mapping(address => uint256) public balances;:
+<b>mapping(address => uint256) public balances;:</b>
 This creates a storage structure that links each user’s address to their balance in the contract.
 
-* function deposit() public payable:
+<b>function deposit() public payable:</b>
 Allows users to send Ether to the contract. The msg.value represents the amount of Ether sent, and this is added to the user's balance.
 
-* function withdraw(uint256 _amount):
+<b>function withdraw(uint256 _amount):</b>
 Lets users withdraw a specified amount of Ether from their balance. It checks if they have enough funds, deducts the amount, and transfers the Ether to them.
 
-* function getBalance():
+<b>function getBalance():</b>
 Returns the balance of the caller’s account.
 
 This contract allows basic saving functionality, where users can deposit, withdraw, and check their balance.
@@ -224,7 +223,7 @@ This contract allows basic saving functionality, where users can deposit, withdr
 </details>
 
 <details>
-  <summary>Compile & deploy the contract using hardhat</summary><br>
+  <summary>COMPILE & DEPLOY THE CONTRACT USING HARDHAT</summary>
 After writing your savings contract, you can compile by using
 
 ```  
@@ -239,7 +238,7 @@ npx hardhat run scripts/deploy.ts --network alfajores
 
 </details>
 <details>
-  <summary>Common Terms Used In Web3.</summary><br>
+  <summary>Common Terms Used In Web3.</summary>
 
 
 
