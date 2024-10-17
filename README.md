@@ -245,7 +245,9 @@ npx hardhat run scripts/deploy.ts --network alfajores
 We are going to create a simple frontend to interact with our contract. We are going to create a deposit component, a withdraw component, and a component to display our saving balance.
 <br>
 <b>Deposit.tsx Component</b>
+  
 ```
+
 import React, { useState } from "react";
 import { useWeb3 } from "@/contexts/useWeb3";  // Use the updated Web3 hook
 
