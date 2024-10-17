@@ -2,7 +2,12 @@
   <img src="https://github.com/eben619/Celo_Africa_Dao-Ghana_University_Tour/blob/main/celo_isotype.svg" alt="Celo Logo" width="150px">
 <h1 >CELO AFRICA DAO</h1>
 </div>
+<b>Process to begin this Code Jam</b>
 
+***Fork this repo, Press the Fork button***
+***Create project branch***
+***Start committing to that branch, Make your changes within new branch***
+<br>
 <details>
   <summary>USEFUL LINKS</summary>
   <br>
@@ -600,44 +605,15 @@ export default function Home() {
 </details>
 
 <details>
-  <summary>Common Terms Used In Web3.</summary>
+  <summary>Project Ideas that can be implemented using this Template/summary>
 
 
 
 </details>
 
 
- 
-### 🌐 What Is Minipay?
-MiniPay is a lightweight stablecoin wallet integrated within the Opera Mini browser, designed specifically for users in emerging markets.MiniPay is focused on financial inclusion, particularly for the unbanked or underbanked populations. Transactions are inexpensive, with minimal fees (less than 0.01 cUSD), and the wallet is optimized for regions with poor connectivity, offering a user-friendly solution for secure, accessible financial services.
-MiniPay we has over 2.5 million wallets and over 250,000 daily active users.
 
 
-### 🔧 Compile the Contract
-With the contract above as the active tab in the Editor, compile the contract.
-A quick way to compile is to hit ctrl + s. You can also compile by going to the Solidity compiler and clicking the compile button, or by right clicking a file in the File Explorer, or by clicking the play button at the top of the Editor.
-
-### 🚀 Deploying the contract
-Go to the Deploy & Run Transactions plugin at the sidebar section.
-At the top of this plugin is the Environment select box. Here you choose Injected Provider which is used to connect Remix with a Browser Wallet (e.g. Metamask) which is generally for deploying to a public network.
-Make sure you have switched your wallet network to Celo's Alfajores Testnet. Deploy your contract and approve the contract creation transaction from the MetaMask pop-up then wait for the confirmation pop-up.
-With the deployment done, we can go ahead and verify the smart contract too.
-
-  
-### References for Solidity
-
-<https://docs.soliditylang.org/en/latest/>
-
-
-### Introduction To Celo Composer
-
-<a href="https://github.com/celo-org/celo-composer/blob/main/README.md">CELO COMPOSER</a>
-
-Celo Composer allows you to quickly build, deploy, and iterate on decentralized applications using Celo. It provides a number of frameworks, examples, and Celo specific functionality to help you get started with your next dApp.
-
-* Prerequisites
-   * <a href='https://nodejs.org/en/download/package-manager'>Node.js (v20 or higher)</a>
-   * <a href="https://git-scm.com/downloads">Git (v2.38 or higher)</a>
 
 ## 🤝 Support
 
