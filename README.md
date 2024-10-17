@@ -87,18 +87,9 @@ Tuples- Group multiple values (e.g., (uint, string, address)).<br>
 
 Basic Structure Of A Function In Solidity:
 
-<img src="https://github.com/eben619/Celo_Africa_Dao-Ghana_University_Tour/blob/main/function.avif" width="500px">
+<img src="https://github.com/eben619/Celo_Africa_Dao-Ghana_University_Tour/blob/main/function.avif" width="500px"><br>
 
-</details><br>
-
-
-<details>
-  <summary>🌐 Common Terms Used In Web3.</summary><br>
-
-
-
-</details>
-## 🔭 Learning Solidity
+🔭 Learning Solidity
 
 📕 Read the docs: <https://docs.soliditylang.org>
 
@@ -112,6 +103,16 @@ Basic Structure Of A Function In Solidity:
 - [Fallback](https://solidity-by-example.org/fallback/)
 
 📧 Learn the [Solidity globals and units](https://solidity.readthedocs.io/en/v0.8.19/units-and-global-variables.html)
+
+</details><br>
+
+
+<details>
+  <summary>🌐 Common Terms Used In Web3.</summary><br>
+
+
+
+</details>
 
 ### 💻 Hands On Coding - Remix IDE
 * REQUIREMENTS
