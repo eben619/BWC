@@ -21,22 +21,9 @@ Celo Foundation is at the forefront of the Web3 revolution, driving the adoption
 Celo's mobile-first approach aims to make decentralized finance (DeFi) accessible to smartphone users worldwide, especially in regions with limited access to traditional banking.<br>
 
 </details>
-## INTRODUCTION
-
-  
-### 💱 Wallets & Transactions
-
-<b>* What is a wallet</b><br>
-  Wallets are tools that create accounts, manage keys, and help users transact on the Celo network.
-  It's important to be careful when choosing a wallet because they manage your secret account keys. You should only use reputable wallets that are    well maintained by organizations/people that you trust.
-
-  
-  
- 
-  
 
 <details>
-  <summary>🌐 Common Terms Used In Web3.</summary><br>
+  <summary>Common Terms Used In Web3.</summary><br>
 
 * Blockchain (A database maintained by a distributed set of computers that do not share a trust relationship or common ownership. This arrangement     is referred to as decentralized. The content of a blockchain's database, or ledger, is authenticated using cryptographic techniques, preventing     its contents being edited or removed except according to a protocol's consensus mechanism)
   
