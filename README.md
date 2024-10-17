@@ -39,7 +39,7 @@ A DApp is composed of at least:
 * A web frontend user interface
 
 <details>
-  <summary>### 🌐 Common Terms Used In Web3.</summary><br>
+  ### <summary>🌐 Common Terms Used In Web3.</summary><br>
 
 * Blockchain (A database maintained by a distributed set of computers that do not share a trust relationship or common ownership. This arrangement     is referred to as decentralized. The content of a blockchain's database, or ledger, is authenticated using cryptographic techniques, preventing     its contents being edited or removed except according to a protocol's consensus mechanism)
   
