@@ -610,13 +610,17 @@ export default function Home() {
 
 <details>
   <summary>PROJECT IDEAS THAT CAN BE IMPLEMENTED USING THIS TEMPLATE</summary>
+  <br>
+<b>Micro-Payments Platform:</b> A system where users can make small, fast payments for services like articles, songs, or e-books.
 
+<b>Subscription-Based Content:</b> Create a pay-per-use subscription system for premium content, such as online courses or tutorials.
 
+<b>Crowdfunding Platform:</b> A decentralized crowdfunding site where backers use Minipay for quick, low-fee contributions to projects.
 
+<b>Remittance System:</b> A remittance solution for people to send small payments globally with low fees and fast transactions, ideal for cross-border transfers.
+
+<b>Event Ticketing:</b> Build a ticketing platform where users pay for event tickets using Minipay, integrating QR codes for verification.
 </details>
-
-
-
 
 
 ## 🤝 Support
