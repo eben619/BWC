@@ -3,13 +3,15 @@
 <h1 >CELO AFRICA DAO</h1>
 </div>
 
-### Link To Access Feedback form
-
-https://docs.google.com/forms/d/e/1FAIpQLSfXogc7lHEgz9ajFhPEVyY7y33_esNzHgR3E8bH4LVz4Yconw/viewform
-
+<details>
+  <summary>Useful Links</summary><br>
+  
 * <a href="http://alfajores.celoscan.io" rel="noreferrer">Celo's Alfajores Testnet Explorer</a><br>
 * <a href="http://faucet.celo.org/alfajores" rel="noreferrer">Funding Your Wallet With Testnet Tokens</a><br>
 * <a href="https://metamask.io/download/" target='_blank'>Click Here To Download Metamask</a><br>
+
+
+</details>
 
 <details>
   <summary>INTRODUCTION</summary><br>
