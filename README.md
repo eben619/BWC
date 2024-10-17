@@ -609,7 +609,7 @@ export default function Home() {
 </details>
 
 <details>
-  <summary>Project Ideas that can be implemented using this Template/summary>
+  <summary>Project IDEAS THAT CAN BE IMPLEMENTED USING THIS TEMPLATE</summary>
 
 
 
