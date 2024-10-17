@@ -10,39 +10,65 @@ https://docs.google.com/forms/d/e/1FAIpQLSfXogc7lHEgz9ajFhPEVyY7y33_esNzHgR3E8bH
 
 ## INTRODUCTION
 
-### 🌐 What Is Web3?
-Web3, also known as the decentralized web, represents the next generation of the internet, where users have control over their data and interactions are facilitated directly between parties without the need for intermediaries. Unlike Web2, which is dominated by centralized platforms, Web3 leverages blockchain technology to ensure transparency, security, and decentralization. It encompasses a wide array of technologies and concepts, including cryptocurrencies, smart contracts, decentralized finance (DeFi), and decentralized autonomous organizations (DAOs).
-
 ### Celo Foundation’s Role in the Web3 Ecosystem
 Celo Foundation is at the forefront of the Web3 revolution, driving the adoption of decentralized finance and promoting financial inclusion worldwide. By leveraging blockchain technology, the foundation is working to create a more equitable and accessible financial system, paving the way for a future where everyone can participate in the global economy.
+Celo's mobile-first approach aims to make decentralized finance (DeFi) accessible to smartphone users worldwide, especially in regions with limited access to traditional banking.
 
 ### 💱 Wallets & Transactions
 
 <b>* What is a wallet</b><br>
   Wallets are tools that create accounts, manage keys, and help users transact on the Celo network.
   It's important to be careful when choosing a wallet because they manage your secret account keys. You should only use reputable wallets that are    well maintained by organizations/people that you trust.
-  
-<b>* Finding wallet applications</b><br>
+
+  <b>* Finding wallet applications</b><br>
   There are currently some compatible wallets for Celo and other EVM compatible networks.<br>
   Metamask <a href="https://metamask.io/download/" target='_blank'>Click Here To Download Metamask</a><br>
-
-<b>* Connecting to Celo Alfajores testnet</b><br>
+  
+  <b>* Connecting to Celo Alfajores testnet</b><br>
 * <a href="http://alfajores.celoscan.io" rel="noreferrer">Celo's Alfajores Testnet Explorer</a>
 * <a href="http://faucet.celo.org/alfajores" rel="noreferrer">Funding Your Wallet With Testnet Tokens</a>
+  
+### 🌐 What Is Minipay?
+MiniPay is a lightweight stablecoin wallet integrated within the Opera Mini browser, designed specifically for users in emerging markets.MiniPay is focused on financial inclusion, particularly for the unbanked or underbanked populations. Transactions are inexpensive, with minimal fees (less than 0.01 cUSD), and the wallet is optimized for regions with poor connectivity, offering a user-friendly solution for secure, accessible financial services.
+MiniPay we has over 2.5 million wallets and over 250,000 daily active users.
 
-### Celo, Ethereum & The Evm (Ethereum Virtual Machine).
 
-Ethereum is characterised by Turing completeness, as the EVM allows any computation to be performed if adequate resources are provided.
-In simple terms  it is able to use its code base to perform virtually any task, as long as it has the correct instructions, enough time and processing power.
-
-Ethereum started as a way to make a general-purpose blockchain that could be programmed for a variety of uses. But very quickly, Ethereum’s vision expanded to become a platform for programming DApps. DApps represent a broader perspective than smart contracts. A DApp is, at the very least, a smart contract and a web user interface. More broadly, a DApp is a web application that is built on top of open, decentralized, peer-to-peer infrastructure services.
-
-In terms of programmability, Celo is similar to Ethereum. Both networks run the Ethereum Virtual Machine (EVM) to support smart contract functionality. This means that all programming languages, developer tooling and standards that target the EVM are relevant for both Celo and Ethereum.
 
 A DApp is composed of at least:
 * Smart contracts on a blockchain
 * A web frontend user interface
+
+<details>
+  <summary>### 🌐 Common Terms Used In Web3.</summary><br>
+
+* Blockchain (A database maintained by a distributed set of computers that do not share a trust relationship or common ownership. This arrangement     is referred to as decentralized. The content of a blockchain's database, or ledger, is authenticated using cryptographic techniques, preventing     its contents being edited or removed except according to a protocol's consensus mechanism)
   
+* Smart Contract (Smart contracts are intructions embeded within code which are executed automatically by a computer program or a transaction          protocol. They make actions such as transferring cryptocurrencies or other tokens possible.)
+  
+* Transactions (Ethereum transactions are network messages that include (among other things) a sender, recipient, value, and data payload.)
+  
+* Data Structures (Ethereum’s state is stored locally on each node as a database, which contains the transactions and system state in a serialized     hashed data structure called a Merkle Patricia Tree.)
+  
+* Gas (A step of execution of a smart contract. Different operations consume different amounts of gas. To prevent denial-of-service attacks,           transactions specify a maximum gas which bounds the steps of execution before a transaction is reverted.)
+  
+* Blocks (The unit of update to the blockchain. A block consists of a header identifying its position in the chain and other metadata, and a body      that contains a list of transactions, and data structures that describe the new state after executing those transactions.)
+  
+* Consensus and finality (Ethereum’s consensus rules are defined in the reference specification, the Yellow Paper <a       href="https://ethereum.github.io/yellowpaper/paper.pdf" rel="noreferrer">(see Further Reading)</a>
+
+* Private Key (A private key is a long, randomly generated number that serves as a cryptographic key in blockchain networks. It is used to sign         transactions and prove ownership of blockchain addresses and the assets within them.)
+  
+* Public Key (A public key is a cryptographic code used to facilitate secure transactions and interactions on a blockchain network. It is derived       from a private key and can be openly shared without compromising the security of the associated assets.)
+  
+* Node (A node is a computer that runs the Ethereum client software and is connected to other nodes on the network. These nodes work together to       verify transactions )
+  
+* JSON-RPC (JSON-RPC is used to communicate with the node through a Web3 provider, a software component that exposes a JSON-RPC API to the client     application)
+  
+* Web3 Provider (Providers take JSON-RPC requests and return the response.)
+
+* Contract ABI ( "ABI" stands for Application Binary Interface in the context of Ethereum smart contracts. It specifies how to interact with a smart contract deployed on the blockchain.)
+
+</details>
+
 ### 🌐 Common Terms Used In Web3.
 
 * Blockchain (A database maintained by a distributed set of computers that do not share a trust relationship or common ownership. This arrangement     is referred to as decentralized. The content of a blockchain's database, or ledger, is authenticated using cryptographic techniques, preventing     its contents being edited or removed except according to a protocol's consensus mechanism)
