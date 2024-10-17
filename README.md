@@ -2,7 +2,7 @@
   <img src="https://github.com/eben619/Celo_Africa_Dao-Ghana_University_Tour/blob/main/celo_isotype.svg" alt="Celo Logo" width="150px">
 <h1 >CELO AFRICA DAO</h1>
 </div>
-<b>Process to begin this Code Jam</b>
+<b>Process to begin this Code Jam</b><br>
 
 ***Fork this repo, Press the Fork button***
 ***Create project branch***
