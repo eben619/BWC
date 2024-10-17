@@ -242,7 +242,7 @@ npx hardhat run scripts/deploy.ts --network alfajores
 <details>
   <summary>BUILDING A FRONTEND TO INTERACT WITH YOUR CONTRACT</summary>
 
-
+We are going to create a simple frontend to interact with our contract. We are going to create a deposit component, a withdraw component, and a component to display our saving balance.
 
 </details>
 <details>
