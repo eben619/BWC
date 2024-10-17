@@ -13,7 +13,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSfXogc7lHEgz9ajFhPEVyY7y33_esNzHgR3E8bH
 ### Celo Foundation’s Role in the Web3 Ecosystem
 Celo Foundation is at the forefront of the Web3 revolution, driving the adoption of decentralized finance and promoting financial inclusion worldwide. By leveraging blockchain technology, the foundation is working to create a more equitable and accessible financial system, paving the way for a future where everyone can participate in the global economy.
 Celo's mobile-first approach aims to make decentralized finance (DeFi) accessible to smartphone users worldwide, especially in regions with limited access to traditional banking.
-
+  
 ### 💱 Wallets & Transactions
 
 <b>* What is a wallet</b><br>
@@ -28,13 +28,6 @@ Celo's mobile-first approach aims to make decentralized finance (DeFi) accessibl
 * <a href="http://alfajores.celoscan.io" rel="noreferrer">Celo's Alfajores Testnet Explorer</a>
 * <a href="http://faucet.celo.org/alfajores" rel="noreferrer">Funding Your Wallet With Testnet Tokens</a>
   
-
-
-
-
-A DApp is composed of at least:
-* Smart contracts on a blockchain
-* A web frontend user interface
 
 <details>
   <summary>🌐 Common Terms Used In Web3.</summary><br>
@@ -104,6 +97,26 @@ Basic Structure Of A Function In Solidity:
 
 </details><br>
 
+<details>
+  <summary>Celo Composer</summary><br>
+
+A DApp is composed of at least:
+
+* Smart Contracts: The backend code that runs on a blockchain (e.g., Solidity contracts on Ethereum or Celo).
+* Frontend: The user interface (UI) often built with traditional web technologies (React, HTML, etc.).
+* RPC (Remote Procedure Call): An endpoint that enables the DApp to communicate with the blockchain network (e.g., Infura, Alchemy).
+* Private Key: A key used to sign transactions, especially in non-custodial wallets.
+* Wallet Integration: Interaction with wallets like MetaMask or Valora for user authentication and transaction signing.
+
+Celo Composer allows you to quickly build, deploy, and iterate on decentralized applications using Celo. It provides a number of template frameworks, examples, and Celo specific functionality to help you get started with your next DApp. It has the wallet integration and other key functionalities needed in building a DApp.
+  
+* Prerequisites
+   * <a href='https://nodejs.org/en/download/package-manager'>Node.js (v20 or higher)</a>
+   * <a href="https://git-scm.com/downloads">Git (v2.38 or higher)</a>
+
+
+</details>
+
 
 <details>
   <summary>Writing A Simple Savings Smart Contract</summary><br>
@@ -162,7 +175,7 @@ After writing your savings contract, you can compile by using
 npx hardhat compile
 ```
 
-After sucessful compilation, use the command below to deploy.
+After sucessful compilation, use the command below to deploy to Alfajores Testnet
 
 ```
 npx hardhat run scripts/deploy.ts --network alfajores
