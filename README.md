@@ -237,11 +237,7 @@ After sucessful compilation, use the command below to deploy to Alfajores Testne
 ```
 npx hardhat run scripts/deploy.ts --network alfajores
 ```
-After successful deployment, you can verify your contract using
 
-```
-npx hardhat verify --network alfajores 0x94E4a792aAa67a01b6a6B3FaA2bA6278c9D7bCD3
-```
 </details>
 <details>
   <summary>BUILDING A FRONTEND TO INTERACT WITH YOUR CONTRACT</summary>
