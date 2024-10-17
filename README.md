@@ -24,7 +24,7 @@ Celo's mobile-first approach aims to make decentralized finance (DeFi) accessibl
 
 <details>
   <summary>COMMON TERMS IN WEB3 DEVELOPMENT.</summary>
-
+<br>
 <b>Blockchain:</b> (A database maintained by a distributed set of computers that do not share a trust relationship or common ownership. This arrangement     is referred to as decentralized. The content of a blockchain's database, or ledger, is authenticated using cryptographic techniques, preventing     its contents being edited or removed except according to a protocol's consensus mechanism)
   
 Wallets are tools that create accounts, manage keys, and help users transact on a blockchain network.
