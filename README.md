@@ -7,12 +7,24 @@
 
 https://docs.google.com/forms/d/e/1FAIpQLSfXogc7lHEgz9ajFhPEVyY7y33_esNzHgR3E8bH4LVz4Yconw/viewform
 
+ <b>* Connecting to Celo Alfajores testnet</b><br>
+* <a href="http://alfajores.celoscan.io" rel="noreferrer">Celo's Alfajores Testnet Explorer</a>
+* <a href="http://faucet.celo.org/alfajores" rel="noreferrer">Funding Your Wallet With Testnet Tokens</a>
 
+<b>* Finding wallet applications</b><br>
+  There are currently some compatible wallets for Celo and other EVM compatible networks.<br>
+  Metamask <a href="https://metamask.io/download/" target='_blank'>Click Here To Download Metamask</a><br>
+
+<details>
+  <summary>INTRODUCTION</summary><br>
+
+Celo Foundation’s Role in the Web3 Ecosystem
+Celo Foundation is at the forefront of the Web3 revolution, driving the adoption of decentralized finance and promoting financial inclusion worldwide. By leveraging blockchain technology, the foundation is working to create a more equitable and accessible financial system, paving the way for a future where everyone can participate in the global economy.
+Celo's mobile-first approach aims to make decentralized finance (DeFi) accessible to smartphone users worldwide, especially in regions with limited access to traditional banking.<br>
+
+</details>
 ## INTRODUCTION
 
-### Celo Foundation’s Role in the Web3 Ecosystem
-Celo Foundation is at the forefront of the Web3 revolution, driving the adoption of decentralized finance and promoting financial inclusion worldwide. By leveraging blockchain technology, the foundation is working to create a more equitable and accessible financial system, paving the way for a future where everyone can participate in the global economy.
-Celo's mobile-first approach aims to make decentralized finance (DeFi) accessible to smartphone users worldwide, especially in regions with limited access to traditional banking.
   
 ### 💱 Wallets & Transactions
 
@@ -20,13 +32,9 @@ Celo's mobile-first approach aims to make decentralized finance (DeFi) accessibl
   Wallets are tools that create accounts, manage keys, and help users transact on the Celo network.
   It's important to be careful when choosing a wallet because they manage your secret account keys. You should only use reputable wallets that are    well maintained by organizations/people that you trust.
 
-  <b>* Finding wallet applications</b><br>
-  There are currently some compatible wallets for Celo and other EVM compatible networks.<br>
-  Metamask <a href="https://metamask.io/download/" target='_blank'>Click Here To Download Metamask</a><br>
   
-  <b>* Connecting to Celo Alfajores testnet</b><br>
-* <a href="http://alfajores.celoscan.io" rel="noreferrer">Celo's Alfajores Testnet Explorer</a>
-* <a href="http://faucet.celo.org/alfajores" rel="noreferrer">Funding Your Wallet With Testnet Tokens</a>
+  
+ 
   
 
 <details>
@@ -108,7 +116,7 @@ A DApp is composed of at least:
 * Private Key: A key used to sign transactions, especially in non-custodial wallets.
 * Wallet Integration: Interaction with wallets like MetaMask or Valora for user authentication and transaction signing.
 
-Celo Composer allows you to quickly build, deploy, and iterate on decentralized applications using Celo. It provides a number of template frameworks, examples, and Celo specific functionality to help you get started with your next DApp. It has the wallet integration and other key functionalities needed in building a DApp.
+Celo Composer allows you to quickly build, deploy, and iterate on decentralized applications using Celo. It provides a number of template frameworks, examples, and Celo specific functionality to help you get started with your next DApp. It has the wallet integration and other key functionalities needed in building a DApp already implemented.
   
 * Prerequisites
    * <a href='https://nodejs.org/en/download/package-manager'>Node.js (v20 or higher)</a>
