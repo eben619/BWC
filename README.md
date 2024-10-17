@@ -28,9 +28,7 @@ Celo's mobile-first approach aims to make decentralized finance (DeFi) accessibl
 * <a href="http://alfajores.celoscan.io" rel="noreferrer">Celo's Alfajores Testnet Explorer</a>
 * <a href="http://faucet.celo.org/alfajores" rel="noreferrer">Funding Your Wallet With Testnet Tokens</a>
   
-### 🌐 What Is Minipay?
-MiniPay is a lightweight stablecoin wallet integrated within the Opera Mini browser, designed specifically for users in emerging markets.MiniPay is focused on financial inclusion, particularly for the unbanked or underbanked populations. Transactions are inexpensive, with minimal fees (less than 0.01 cUSD), and the wallet is optimized for regions with poor connectivity, offering a user-friendly solution for secure, accessible financial services.
-MiniPay we has over 2.5 million wallets and over 250,000 daily active users.
+
 
 
 
@@ -108,44 +106,47 @@ Basic Structure Of A Function In Solidity:
 
 
 <details>
+  <summary>⌨️ Writing A Simple Savings Smart Contract</summary><br>
+
+
+
+```
+
+// SPDX-License-Identifier: MIT
+// Compatible with OpenZeppelin Contracts ^5.0.0
+pragma solidity ^0.8.20;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+contract Ebenezer is ERC20 {
+    constructor() ERC20("Ebenezer", "$EBN") {
+        _mint(msg.sender, 100000 * 10 ** decimals());
+    }
+}
+
+
+```
+
+</details>
+
+<details>
+  <summary>🌐 Common Terms Used In Web3.</summary><br>
+
+
+
+</details>
+<details>
   <summary>🌐 Common Terms Used In Web3.</summary><br>
 
 
 
 </details>
 
-### 💻 Hands On Coding - Remix IDE
-* REQUIREMENTS
-  * Web Browser (Chrome)
-  * Internet Connection
-  * Web3 Wallet (MetaMask)
-  
-### Remix Interface (overview)
-  
 
-  <img src="https://github.com/eben619/Celo_Africa_Dao-Ghana_University_Tour/blob/main/Remix.png">
-
- Visit <a href="https://remix.ethereum.org/">REMIX IDE</a> to use this IDE.<br> 
-  The Remix interface can be broken down into 3 main sections-
-* Sidebar (Section 1)
-    * File explorer - This is where you can create, open, and save files.
-    * Search - This is where you can search in your files.
-    * Solidity Compiler - This is where you can compile your smart contract.
-    * Deploy & Run Transactions - This is where you can deploy and interact with your smart contract.
-    * Solidity Unit Testing - This is where you can run unit tests for your smart contract.
-
-* Editor (Section 2) - This is where you can write your smart contract code.
-* Terminal (Section 3) - This is where you will see outputs from different actions like compiling, deploying, and running tests.
-
-* Contract Structure
-  * SPDX License Identifier
-  * Pragmas
-  * Imports
-  * Comments
-  * State Variables
-  * Contract Storage
-  * Constructor function
-  * Functions
+ 
+    ### 🌐 What Is Minipay?
+MiniPay is a lightweight stablecoin wallet integrated within the Opera Mini browser, designed specifically for users in emerging markets.MiniPay is focused on financial inclusion, particularly for the unbanked or underbanked populations. Transactions are inexpensive, with minimal fees (less than 0.01 cUSD), and the wallet is optimized for regions with poor connectivity, offering a user-friendly solution for secure, accessible financial services.
+MiniPay we has over 2.5 million wallets and over 250,000 daily active users.
 
 ### ⌨️ Writing A Simple Smart Contract
 
